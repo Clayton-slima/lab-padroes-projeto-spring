@@ -1,6 +1,12 @@
 package one.digitalinnovation.lab_padroes_projeto_spring.model;
 
-import jakarta.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import javax.persistence.*;
 
 @Entity
 public class Cliente {
@@ -35,4 +41,5 @@ public class Cliente {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+
 }
